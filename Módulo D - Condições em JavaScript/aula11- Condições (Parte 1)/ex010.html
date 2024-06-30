@@ -10,17 +10,6 @@
     Velocidade do carro: <input type="number" name="txtvel" id="txtvel" placeholder="Digite a velocidade do carro">
     <input type="button" value="Verificar" onclick="verificar()">
     <div id="res"></div>
-    <script>
-        function verificar() {
-            var txtv = document.getElementById('txtvel')
-            var vel = Number(txtv.value)
-            var res = document.querySelector('div#res')
-            res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel} Km/h</strong></p>`
-            if (vel > 60) {
-                res.innerHTML += `<p>Você está <strong>MULTADO</strong> por excesso de velocidade</p>`
-            }
-            res.innerHTML += `<p>Dirija sempre com cinto de segurança</p>`
-        }
-    </script>
+    <script src="ex010.js"></script>
 </body>
 </html>
