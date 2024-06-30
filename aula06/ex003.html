@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Programa</title>
+    <style>
+        body {
+            background-color: rgb(105, 105, 173);
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1 {
+            color: rgb(255, 212, 22); 
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo</h1>
+    <p>Já me livrei da maldição</p>
+    <script>
+        var n1 = window.prompt('Digite um número inteiro: ')
+        var n2 = window.prompt('Digite um número real: ')
+        // var s = n1 + n1 concatenação
+        var s = Number(n1) + Number(n2) // pois window.prompt() retorna uma string 
+        window.alert('A soma vale ' + s)
+
+        var n3 = Number(window.prompt('Digite um número inteiro: '))
+        window.alert('O número inteiro foi ' + String(n3))
+        n3.toString() // converte para string
+
+        var nome = window.prompt('Qual é o seu nome?')
+        var idade = Number(window.prompt('Quantos anos você tem?'))
+        var nota = Number(window.prompt('Qual foi a sua nota?'))
+        var f = window.confirm('Você foi aprovado?')
+        window.alert(`Nome: ${nome}\nIdade: ${idade}\nNota: ${nota}\nAprovado: ${f}`)
+    </script>
+</body>
+</html>
